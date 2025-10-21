@@ -1,0 +1,4 @@
+SELECT * from HistoricoEmprego
+where datatermino NOTNULL
+ORDER by salario DESC 
+LIMIT 5;
