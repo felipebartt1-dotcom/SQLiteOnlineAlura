@@ -1,4 +1,13 @@
-SELECT * from HistoricoEmprego
-where datatermino NOTNULL
-ORDER by salario DESC 
+-- Seleciona todos os registros da tabela HistoricoEmprego
+-- onde a data de término do emprego está preenchida
+-- (ou seja, o emprego já foi encerrado)
+SELECT * 
+FROM HistoricoEmprego 
+WHERE datatermino NOT NULL
+
+-- Ordena os resultados pelo salário em ordem decrescente,
+-- trazendo primeiro os empregos com maiores salários
+ORDER BY salario DESC 
+
+-- Limita a consulta aos 5 primeiros resultados
 LIMIT 5;
