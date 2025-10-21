@@ -1,40 +1,52 @@
-Projeto SQLite Online – Alura
+🗄️ Projeto SQLite Online – Alura
 
-Este projeto reúne consultas SQL desenvolvidas durante o curso SQLite Online da instituição Alura.
-O objetivo é praticar a criação e execução de consultas em bancos de dados SQLite, explorando filtros, ordenações, condições compostas e uso de LIKE, IN, NOT IN, IS NOT NULL, entre outros recursos.
 
-Banco de Dados
+
+
+Consultas SQL desenvolvidas durante o curso SQLite Online da Alura, para prática de criação e execução de queries, incluindo filtros, ordenações, condições compostas e uso de LIKE, IN, NOT IN, IS NOT NULL, entre outros.
+
+📂 Banco de Dados
 
 Arquivo: Banco+de+dados+Fokus.db
 
-Estrutura: contém tabelas como HistoricoEmprego, Treinamento e Colaboradores.
+Tabelas incluídas:
 
-Consultas
+Colaboradores – informações sobre os funcionários
 
-As consultas estão todas centralizadas no arquivo:
+Dependentes – dados de dependentes dos colaboradores
 
-Consultas_profissionais.sql
+Faturamento – registros relacionados a faturamento ou vendas
 
-Esse arquivo inclui:
+HistoricoEmprego – histórico de empregos dos colaboradores
 
-Seleção dos 5 empregos encerrados com maior salário.
+Licencas – informações sobre licenças (férias, afastamentos, etc.)
 
-Cursos que contêm a palavra “realizar”.
+Treinamento – cursos e treinamentos realizados pelos colaboradores
 
-Colaboradores cujo nome começa com “Isadora”.
+📊 Consultas
 
-Professores com empregos finalizados.
+Arquivo principal: Consultas_profissionais.sql
 
-Profissionais com cargo “Oftalmologista” ou “Dermatologista”.
+Inclui consultas como:
 
-Profissionais que não são Oftalmologista, Dermatologista ou Professor.
+Top 5 empregos encerrados com maior salário
 
-Cursos específicos por instituição (uso de condições compostas).
+Cursos contendo a palavra “realizar”
 
-Como usar
+Colaboradores cujo nome começa com “Isadora”
 
-Abra o banco de dados Banco+de+dados+Fokus.db em qualquer ferramenta SQLite (DB Browser for SQLite, DBeaver, SQLiteOnline, etc.).
+Professores com empregos finalizados
 
-Abra o arquivo Consultas_profissionais.sql.
+Profissionais com cargo “Oftalmologista” ou “Dermatologista”
 
-Execute as consultas individualmente ou todas de uma vez, conforme necessário.
+Profissionais que não são Oftalmologista, Dermatologista ou Professor
+
+Cursos específicos por instituição (condições compostas)
+
+⚙️ Como usar
+
+Abra Banco+de+dados+Fokus.db em qualquer ferramenta SQLite (DB Browser for SQLite, DBeaver, SQLiteOnline, etc.).
+
+Abra Consultas_profissionais.sql.
+
+Execute as consultas individualmente ou todas de uma vez.
