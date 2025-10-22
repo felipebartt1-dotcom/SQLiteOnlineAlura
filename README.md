@@ -70,7 +70,7 @@ Cada consulta está comentada dentro do arquivo .SQL para fácil compreensão e 
 
 ## ⚙️ Como usar
 
-Abra o arquivo [Baixar banco de dados](./Banco+de+dados+Fokus.db) em qualquer ferramenta SQLite (DB Browser for SQLite, DBeaver, SQLiteOnline, etc.).
+Abra o arquivo [Banco+de+dados+Fokus.db](./Banco+de+dados+Fokus.db) em qualquer ferramenta SQLite (DB Browser for SQLite, DBeaver, SQLiteOnline, etc.).
 
 Abra [Consultas_profissionais.sql.](./Consultas_profissionais.sql)
 
