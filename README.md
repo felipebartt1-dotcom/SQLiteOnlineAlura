@@ -1,74 +1,77 @@
-🗄️ Projeto SQLite Online – Alura
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-F7DF1E?style=flat&logo=sql&logoColor=black)
 
 
+# 🗄️ Projeto SQLite Online – Alura
 
 
 Consultas SQL desenvolvidas durante o curso SQLite Online da Alura, para prática de criação e execução de queries, incluindo filtros, ordenações, condições compostas e uso de LIKE, IN, NOT IN, IS NOT NULL e funções agregadas.
 
-🔗 Repositório: Meu repositório SQLite Online – Alura
+🔗 Repositório: [Meu repositório SQLite Online – Alura](https://github.com/felipebartt1-dotcom/SQLiteOnlineAlura)
 
-📂 Banco de Dados
 
-Arquivo: Banco+de+dados+Fokus.db
+## 📂 Banco de Dados
+
+**Arquivo: Banco+de+dados+Fokus.db**
 
 Tabelas incluídas:
 
-Colaboradores – informações sobre os funcionários
+- Colaboradores – informações sobre os funcionários
 
-Dependentes – dados de dependentes dos colaboradores
+- Dependentes – dados de dependentes dos colaboradores
 
-Faturamento – registros relacionados a faturamento ou vendas
+- Faturamento – registros relacionados a faturamento ou vendas
 
-HistoricoEmprego – histórico de empregos dos colaboradores
+- HistoricoEmprego – histórico de empregos dos colaboradores
 
-Licencas – informações sobre licenças (férias, afastamentos, etc.)
+- Licencas – informações sobre licenças (férias, afastamentos, etc.)
 
-Treinamento – cursos e treinamentos realizados pelos colaboradores
+- Treinamento – cursos e treinamentos realizados pelos colaboradores
 
-📊 Consultas
+## 📊 Consultas
 
 Arquivo principal: Consultas_profissionais.sql
 
 Principais consultas:
 
-Top 5 empregos encerrados com maior salário
+1. Top 5 empregos encerrados com maior salário
 
-Cursos contendo a palavra “realizar”
+2. Cursos contendo a palavra “realizar”
 
-Colaboradores cujo nome começa com “Isadora”
+3. Colaboradores cujo nome começa com “Isadora”
 
-Professores com empregos finalizados
+4. Professores com empregos finalizados
 
-Profissionais com cargo “Oftalmologista” ou “Dermatologista”
+5. Profissionais com cargo “Oftalmologista” ou “Dermatologista”
 
-Profissionais que não são Oftalmologista, Dermatologista ou Professor
+6. Profissionais que não são Oftalmologista, Dermatologista ou Professor
 
-Cursos específicos por instituição (condições compostas)
+7. Cursos específicos por instituição (condições compostas)
 
-Mês com maior e menor faturamento bruto
+8. Mês com maior e menor faturamento bruto
 
-Total de novos clientes adquiridos em 2023
+9. Total de novos clientes adquiridos em 2023
 
-Média de despesas e lucro líquido
+10. Média de despesas e lucro líquido
 
-Total de empregos encerrados
+11. Total de empregos encerrados
 
-Número de licenças do tipo férias
+12. Número de licenças do tipo férias
 
-Tipos de parentesco dos dependentes e contagem por tipo
+13. Tipos de parentesco dos dependentes e contagem por tipo
 
-Cursos realizados por instituição, ordenados pelo número de cursos
+14. Cursos realizados por instituição, ordenados pelo número de cursos
 
-Instituições com mais de 2 cursos cadastrados
+15. Instituições com mais de 2 cursos cadastrados
 
-Contagem de colaboradores por cargo (cargos com 2 ou mais ocorrências)
+16. Contagem de colaboradores por cargo (cargos com 2 ou mais ocorrências)
 
-Cada consulta está comentada dentro do arquivo .sql para fácil compreensão e aprendizado.
+Cada consulta está comentada dentro do arquivo .SQL para fácil compreensão e aprendizado.
 
-⚙️ Como usar
+## ⚙️ Como usar
 
-Abra o arquivo Banco+de+dados+Fokus.db em qualquer ferramenta SQLite (DB Browser for SQLite, DBeaver, SQLiteOnline, etc.).
+Abra o arquivo [Baixar banco de dados](./Banco+de+dados+Fokus.db) em qualquer ferramenta SQLite (DB Browser for SQLite, DBeaver, SQLiteOnline, etc.).
 
-Abra Consultas_profissionais.sql.
+Abra [Consultas_profissionais.sql.](./Consultas_profissionais.sql)
 
 Execute as consultas individualmente ou todas de uma vez.
