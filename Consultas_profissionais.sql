@@ -158,3 +158,72 @@ FROM HistoricoEmprego
 GROUP BY cargo
 HAVING qtd >= 2
 ORDER BY qtd;
+
+-- ===============================================================
+-- 20) Verifica o tamanho dos CPFs cadastrados
+-- ===============================================================
+SELECT COUNT(*), LENGTH(CPF) AS QTD
+FROM Colaboradores
+WHERE qtd = 11;
+
+-- ===============================================================
+-- 21) Concatena nome, CPF e endereço em uma única string
+-- ===============================================================
+SELECT ('A pessoa colaboradora ' || nome || ' de CPF ' 
+        || cpf || ' possui o seguinte endereço: ' 
+        || endereco) AS texto
+FROM Colaboradores;
+
+-- ===============================================================
+-- 22) Concatenação anterior em letras maiúsculas
+-- ===============================================================
+SELECT UPPER('A pessoa colaboradora ' || nome || ' de CPF ' 
+        || cpf || ' possui o seguinte endereço: ' 
+        || endereco) AS texto
+FROM Colaboradores;
+
+-- ===============================================================
+-- 23) Concatenação anterior em letras minúsculas
+-- ===============================================================
+SELECT LOWER('A pessoa colaboradora ' || nome || ' de CPF ' 
+        || cpf || ' possui o seguinte endereço: ' 
+        || endereco) AS texto
+FROM Colaboradores;
+
+-- ===============================================================
+-- 24) Extrai o ano e o mês da data de início das licenças
+-- ===============================================================
+SELECT id_colaborador, STRFTIME('%Y/%m', datainicio) 
+FROM Licencas;
+
+-- ===============================================================
+-- 25) Calcula o número de dias entre contratação e término do emprego
+-- ===============================================================
+SELECT id_colaborador, JULIANDAY(datatermino) - JULIANDAY(datacontratacao) AS dias_trabalhados
+FROM HistoricoEmprego
+WHERE datatermino IS NOT NULL;
+
+-- ===============================================================
+-- 26) Calcula e arredonda a média do faturamento bruto
+-- ===============================================================
+SELECT AVG(faturamento_bruto), ROUND(AVG(faturamento_bruto),2)
+FROM faturamento;
+
+-- ===============================================================
+-- 27) Arredonda os valores de faturamento e despesas para cima (CEIL)
+-- ===============================================================
+SELECT CEIL(faturamento_bruto), CEIL(despesas) 
+FROM faturamento;
+
+-- ===============================================================
+-- 28) Arredonda os valores de faturamento e despesas para baixo (FLOOR)
+-- ===============================================================
+SELECT FLOOR(faturamento_bruto), FLOOR(despesas) 
+FROM faturamento;
+
+-- ===============================================================
+-- 29) Exibe o faturamento médio formatado como texto
+-- ===============================================================
+SELECT ('O faturamento bruto médio foi ' 
+        || CAST(ROUND(AVG(faturamento_bruto),2) AS TEXT)) AS resultado
+FROM faturamento;
