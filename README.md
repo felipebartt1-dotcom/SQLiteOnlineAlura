@@ -32,39 +32,25 @@ Tabelas incluídas:
 
 Arquivo principal: Consultas_profissionais.sql
 
-Principais consultas:
+Principais Consultas
 
-1. Top 5 empregos encerrados com maior salário
-
-2. Cursos contendo a palavra “realizar”
-
-3. Colaboradores cujo nome começa com “Isadora”
-
-4. Professores com empregos finalizados
-
-5. Profissionais com cargo “Oftalmologista” ou “Dermatologista”
-
-6. Profissionais que não são Oftalmologista, Dermatologista ou Professor
-
-7. Cursos específicos por instituição (condições compostas)
-
-8. Mês com maior e menor faturamento bruto
-
-9. Total de novos clientes adquiridos em 2023
-
-10. Média de despesas e lucro líquido
-
-11. Total de empregos encerrados
-
-12. Número de licenças do tipo férias
-
-13. Tipos de parentesco dos dependentes e contagem por tipo
-
-14. Cursos realizados por instituição, ordenados pelo número de cursos
-
-15. Instituições com mais de 2 cursos cadastrados
-
-16. Contagem de colaboradores por cargo (cargos com 2 ou mais ocorrências)
+1. 🧾 **Top 5 empregos encerrados com maior salário**  
+2. 🎓 **Cursos contendo a palavra “realizar”**  
+3. 👩‍💼 **Colaboradores cujo nome começa com “Isadora”**  
+4. 👨‍🏫 **Professores com empregos finalizados**  
+5. 🩺 **Profissionais com cargo “Oftalmologista” ou “Dermatologista”**  
+6. 🚫 **Profissionais que não são Oftalmologista, Dermatologista ou Professor**  
+7. 🏫 **Cursos específicos por instituição (condições compostas)**  
+8. 💰 **Mês com maior e menor faturamento bruto**  
+9. 📈 **Total de novos clientes adquiridos em 2023**  
+10. 💹 **Média de despesas e lucro líquido**  
+11. 📅 **Total de empregos encerrados**  
+12. 🌴 **Número de licenças do tipo “Férias”**  
+13. 👨‍👩‍👧 **Tipos de parentesco dos dependentes e contagem por tipo**  
+14. 🏢 **Cursos realizados por instituição, ordenados pelo número de cursos**  
+15. 🏫 **Instituições com mais de 2 cursos cadastrados**  
+16. 🧮 **Contagem de colaboradores por cargo (com 2 ou mais ocorrências)**  
+17. 🧾 **Consultas complementares utilizando funções de texto, data e arredondamento**
 
 Cada consulta está comentada dentro do arquivo .SQL para fácil compreensão e aprendizado.
 
