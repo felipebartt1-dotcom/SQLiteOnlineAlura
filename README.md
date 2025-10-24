@@ -90,4 +90,4 @@ Consultas SQL desenvolvidas durante o curso **SQLite Online** da Alura. Este pro
    - `Projeto Mao na massa.sql`  
    - `Mão na massa gerenciamento escolar.sql`  
 
-3. Execute as consultas individualmente ou todas de uma vez.
+3. Execute as consultas individualmente.
