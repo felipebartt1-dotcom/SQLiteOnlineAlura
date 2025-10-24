@@ -83,7 +83,7 @@ Consultas SQL desenvolvidas durante o curso **SQLite Online** da Alura. Este pro
 
 1. Abra o banco de dados correspondente:  
    - [`Banco+de+dados+Fokus.db`](./Banco+de+dados+Fokus.db) para consultas profissionais e Projeto Mao na Massa  
-   - [`Escola.db`](./Escola.db) para o módulo de gerenciamento escolar  
+   - [`Banco_de_dados_escola.db`](./Banco_de_dados_escola.db) para o módulo de gerenciamento escolar  
 
 2. Abra o arquivo `.sql` desejado:  
    - `Consultas_profissionais.sql`  
