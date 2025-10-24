@@ -1,63 +1,93 @@
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-F7DF1E?style=flat&logo=sql&logoColor=black)
 
-
 # 🗄️ Projeto SQLite Online – Alura
 
+Consultas SQL desenvolvidas durante o curso **SQLite Online** da Alura. Este projeto tem como objetivo praticar a criação e execução de queries, incluindo filtros, ordenações, condições compostas e uso de:  
+`LIKE`, `IN`, `NOT IN`, `IS NOT NULL`, funções agregadas e manipulação de datas.
 
-Consultas SQL desenvolvidas durante o curso SQLite Online da Alura, para prática de criação e execução de queries, incluindo filtros, ordenações, condições compostas e uso de LIKE, IN, NOT IN, IS NOT NULL e funções agregadas.
+🔗 Repositório: [SQLite Online – Alura](https://github.com/felipebartt1-dotcom/SQLiteOnlineAlura)
 
-🔗 Repositório: [Meu repositório SQLite Online – Alura](https://github.com/felipebartt1-dotcom/SQLiteOnlineAlura)
+---
 
+## 📂 Bancos de Dados
 
-## 📂 Banco de Dados
+1. **Banco+de+dados+Fokus.db**  
+   Tabelas principais:  
+   - Colaboradores  
+   - Dependentes  
+   - Faturamento  
+   - HistoricoEmprego  
+   - Licencas  
+   - Treinamento  
+   - CargosColaboradores  
 
-**Arquivo: Banco+de+dados+Fokus.db**
+2. **Escola.db**  
+   Tabelas principais:  
+   - Alunos  
+   - Notas  
+   - Disciplinas  
 
-Tabelas incluídas:
-
-- Colaboradores – informações sobre os funcionários
-
-- Dependentes – dados de dependentes dos colaboradores
-
-- Faturamento – registros relacionados a faturamento ou vendas
-
-- HistoricoEmprego – histórico de empregos dos colaboradores
-
-- Licencas – informações sobre licenças (férias, afastamentos, etc.)
-
-- Treinamento – cursos e treinamentos realizados pelos colaboradores
+---
 
 ## 📊 Consultas
 
-Arquivo principal: Consultas_profissionais.sql
+### 1️⃣ Consultas Profissionais (`Consultas_profissionais.sql`)
 
-Principais Consultas
+- Top 5 empregos encerrados com maior salário  
+- Cursos contendo a palavra “realizar”  
+- Colaboradores cujo nome começa com “Isadora”  
+- Profissionais com cargo “Oftalmologista” ou “Dermatologista”  
+- Profissionais que não são Oftalmologista, Dermatologista ou Professor  
+- Cursos específicos por instituição  
+- Mês com maior e menor faturamento bruto  
+- Total de novos clientes adquiridos em 2023  
+- Média de despesas e lucro líquido  
+- Total de empregos encerrados  
+- Número de licenças do tipo “Férias”  
+- Tipos de parentesco dos dependentes e contagem por tipo  
+- Cursos realizados por instituição, ordenados pelo número de cursos  
+- Instituições com mais de 2 cursos cadastrados  
+- Contagem de colaboradores por cargo (com 2 ou mais ocorrências)  
+- Consultas complementares com funções de texto, data e arredondamento  
 
-1. 🧾 **Top 5 empregos encerrados com maior salário**  
-2. 🎓 **Cursos contendo a palavra “realizar”**  
-3. 👩‍💼 **Colaboradores cujo nome começa com “Isadora”**  
-4. 👨‍🏫 **Professores com empregos finalizados**  
-5. 🩺 **Profissionais com cargo “Oftalmologista” ou “Dermatologista”**  
-6. 🚫 **Profissionais que não são Oftalmologista, Dermatologista ou Professor**  
-7. 🏫 **Cursos específicos por instituição (condições compostas)**  
-8. 💰 **Mês com maior e menor faturamento bruto**  
-9. 📈 **Total de novos clientes adquiridos em 2023**  
-10. 💹 **Média de despesas e lucro líquido**  
-11. 📅 **Total de empregos encerrados**  
-12. 🌴 **Número de licenças do tipo “Férias”**  
-13. 👨‍👩‍👧 **Tipos de parentesco dos dependentes e contagem por tipo**  
-14. 🏢 **Cursos realizados por instituição, ordenados pelo número de cursos**  
-15. 🏫 **Instituições com mais de 2 cursos cadastrados**  
-16. 🧮 **Contagem de colaboradores por cargo (com 2 ou mais ocorrências)**  
-17. 🧾 **Consultas complementares utilizando funções de texto, data e arredondamento**
+---
 
-Cada consulta está comentada dentro do arquivo .SQL para fácil compreensão e aprendizado.
+### 2️⃣ Projeto Mao na Massa (`Projeto Mao na massa.sql`)
+
+- Primeiros 5 colaboradores, ordenados por nome  
+- Cargos sem data de término (datatermino nula)  
+- Colaboradores cujo nome começa com 'A' e termina com 's'  
+- Supervisores com média salarial acima de 5000  
+- Concatenação de nome e e-mail e comprimento do texto resultante  
+- Licenças: diferença em dias entre a data de início e a data atual  
+- Arredondamento do salário na tabela CargosColaboradores  
+- Cargos com data de contratação posterior a 2023-01-01  
+- Classificação de colaboradores por faixa salarial: Baixo, Médio, Alto  
+
+---
+
+### 3️⃣ Mão na Massa – Gerenciamento Escolar (`Mão na massa gerenciamento escolar.sql`)
+
+- Média de notas dos alunos em História  
+- Alunos cujo nome começa com 'A'  
+- Alunos com aniversário em fevereiro  
+- Cálculo da idade dos alunos a partir da data de nascimento  
+- Verificação de aprovação dos alunos (nota >= 6)  
+
+> Todas as consultas estão comentadas dentro dos arquivos `.sql` para fácil compreensão e aprendizado.
+
+---
 
 ## ⚙️ Como usar
 
-Abra o arquivo [Banco+de+dados+Fokus.db](./Banco+de+dados+Fokus.db) em qualquer ferramenta SQLite (DB Browser for SQLite, DBeaver, SQLiteOnline, etc.).
+1. Abra o banco de dados correspondente:  
+   - [`Banco+de+dados+Fokus.db`](./Banco+de+dados+Fokus.db) para consultas profissionais e Projeto Mao na Massa  
+   - [`Escola.db`](./Escola.db) para o módulo de gerenciamento escolar  
 
-Abra [Consultas_profissionais.sql.](./Consultas_profissionais.sql)
+2. Abra o arquivo `.sql` desejado:  
+   - `Consultas_profissionais.sql`  
+   - `Projeto Mao na massa.sql`  
+   - `Mão na massa gerenciamento escolar.sql`  
 
-Execute as consultas individualmente ou todas de uma vez.
+3. Execute as consultas individualmente ou todas de uma vez.
