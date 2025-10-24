@@ -227,3 +227,19 @@ FROM faturamento;
 SELECT ('O faturamento bruto médio foi ' 
         || CAST(ROUND(AVG(faturamento_bruto),2) AS TEXT)) AS resultado
 FROM faturamento;
+
+-- ===============================================================
+-- 30) Classifica colaboradores por faixa salarial
+-- ===============================================================
+SELECT id_colaborador, cargo, salario,
+CASE 
+    WHEN salario < 3000 THEN 'Baixo'
+    WHEN salario BETWEEN 3000 AND 6000 THEN 'Médio'
+    ELSE 'Alto'
+END AS Categoria_salario
+FROM HistoricoEmprego;
+
+-- ===============================================================
+-- 31) Renomeia a tabela HistoricoEmprego para CargosColaboradores
+
+ALTER TABLE HistoricoEmprego RENAME TO CargosColaboradores;
